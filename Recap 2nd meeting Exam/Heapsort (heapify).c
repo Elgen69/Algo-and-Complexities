@@ -1,6 +1,20 @@
 /* Heapify vs. Insert All Elements Heapify: Build a heap from the bottom up in
  𝑂 ( 𝑛 ) O(n) time. Insert All Elements: Insert elements one by one into a heap,
- taking 𝑂 ( 𝑛 log ⁡ 𝑛 ) O(nlogn) time. */
+ taking 𝑂 ( 𝑛 log ⁡ 𝑛 ) O(nlogn) time.
+
+Key Differences Between Heapify Sorting and Insert-All-Elements
+Heapify Sorting:
+
+The entire array is treated as a heap.
+Uses a bottom-up approach: first builds the heap by heapifying nodes starting from the last non-leaf node up to the root.
+Applies the heap property to extract the root and sort the array.
+Insert All Elements:
+
+Elements are inserted one at a time into an initially empty heap.
+After each insertion, the heap property is restored by sifting up (moving the new element up until it's in the right spot).
+This is more of a top-down approach.
+
+ */
 
 #include <stdio.h>
 
